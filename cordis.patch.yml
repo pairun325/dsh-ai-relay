@@ -1,0 +1,4 @@
+# dsh-ai-relay 的 bundle patch：把这个插件插进 profile 的层叠配置。
+- insert:
+    - id: ai-relay
+      name: 'dsh-ai-relay'

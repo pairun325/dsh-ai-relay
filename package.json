@@ -1,0 +1,40 @@
+{
+  "name": "dsh-ai-relay",
+  "version": "0.1.0",
+  "description": "Ask other AI models to help with the work: OpenAI-compatible and Anthropic routes as agent tools inside DeepSeek Harness.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "llm",
+    "multi-model",
+    "openai-compatible",
+    "anthropic",
+    "ai-relay"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
